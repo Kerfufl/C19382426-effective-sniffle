@@ -38,7 +38,7 @@ func _process(delta):
 	DebugDraw.set_text("turn: ", str(turn))
 	
 	if abs(turn) > 0:     
-		rotation.y += rotSpeed * delta * turn
+		rotation.y -= rotSpeed * delta * turn
 	
 	
 	var move = Input.get_axis("move_forward", "move_back")
